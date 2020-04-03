@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/financial-app-redux/static/css/main.667f2a60.chunk.css",
+    "main.js": "/financial-app-redux/static/js/main.c320aadc.chunk.js",
+    "main.js.map": "/financial-app-redux/static/js/main.c320aadc.chunk.js.map",
+    "runtime-main.js": "/financial-app-redux/static/js/runtime-main.fa4f38e2.js",
+    "runtime-main.js.map": "/financial-app-redux/static/js/runtime-main.fa4f38e2.js.map",
+    "static/js/2.9cf40eed.chunk.js": "/financial-app-redux/static/js/2.9cf40eed.chunk.js",
+    "static/js/2.9cf40eed.chunk.js.map": "/financial-app-redux/static/js/2.9cf40eed.chunk.js.map",
+    "index.html": "/financial-app-redux/index.html",
+    "precache-manifest.ed826d473d66c38725b7332ee3e6b6db.js": "/financial-app-redux/precache-manifest.ed826d473d66c38725b7332ee3e6b6db.js",
+    "service-worker.js": "/financial-app-redux/service-worker.js",
+    "static/css/main.667f2a60.chunk.css.map": "/financial-app-redux/static/css/main.667f2a60.chunk.css.map",
+    "static/js/2.9cf40eed.chunk.js.LICENSE.txt": "/financial-app-redux/static/js/2.9cf40eed.chunk.js.LICENSE.txt",
+    "static/media/income.png": "/financial-app-redux/static/media/income.09ecc732.png",
+    "static/media/spending.png": "/financial-app-redux/static/media/spending.664ff3dc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa4f38e2.js",
+    "static/js/2.9cf40eed.chunk.js",
+    "static/css/main.667f2a60.chunk.css",
+    "static/js/main.c320aadc.chunk.js"
+  ]
+}

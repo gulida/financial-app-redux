@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="" />
+    <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZytatLwXALcsMjUcFPIV3EjicE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,8 +34,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../financial-accounting" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,7 +82,8 @@
       <workItem from="1585842316144" duration="542000" />
       <workItem from="1585842867535" duration="1376000" />
       <workItem from="1585854491900" duration="9269000" />
-      <workItem from="1585932379241" duration="10261000" />
+      <workItem from="1585932379241" duration="11237000" />
+      <workItem from="1585944288124" duration="691000" />
     </task>
     <servers />
   </component>
@@ -84,22 +95,22 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1585938400736" />
-    <state width="886" height="272" key="GridCell.Tab.0.bottom" timestamp="1585932793254">
+    <state width="886" height="272" key="GridCell.Tab.0.bottom" timestamp="1585943993721">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="886" height="272" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
-    <state width="886" height="272" key="GridCell.Tab.0.center" timestamp="1585932793254">
+    <state width="886" height="272" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1585943993721" />
+    <state width="886" height="272" key="GridCell.Tab.0.center" timestamp="1585943993721">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="886" height="272" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
-    <state width="886" height="272" key="GridCell.Tab.0.left" timestamp="1585932793254">
+    <state width="886" height="272" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1585943993721" />
+    <state width="886" height="272" key="GridCell.Tab.0.left" timestamp="1585943993720">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="886" height="272" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
-    <state width="886" height="272" key="GridCell.Tab.0.right" timestamp="1585932793254">
+    <state width="886" height="272" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1585943993720" />
+    <state width="886" height="272" key="GridCell.Tab.0.right" timestamp="1585943993721">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="886" height="272" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
+    <state width="886" height="272" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1585943993721" />
     <state x="13" y="34" width="863" height="998" key="dock-window-1" timestamp="1585934578508">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZytatLwXALcsMjUcFPIV3EjicE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../financial-accounting" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="" />
+      <created>1585823228044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585823228044</updated>
+      <workItem from="1585823230823" duration="7515000" />
+      <workItem from="1585832010904" duration="6617000" />
+      <workItem from="1585838640314" duration="3666000" />
+      <workItem from="1585842316144" duration="542000" />
+      <workItem from="1585842867535" duration="1376000" />
+      <workItem from="1585854491900" duration="9269000" />
+      <workItem from="1585932379241" duration="10261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl" timestamp="1585938400736">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1585938400736" />
+    <state width="886" height="272" key="GridCell.Tab.0.bottom" timestamp="1585932793254">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="886" height="272" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
+    <state width="886" height="272" key="GridCell.Tab.0.center" timestamp="1585932793254">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="886" height="272" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
+    <state width="886" height="272" key="GridCell.Tab.0.left" timestamp="1585932793254">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="886" height="272" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
+    <state width="886" height="272" key="GridCell.Tab.0.right" timestamp="1585932793254">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="886" height="272" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1585932793254" />
+    <state x="13" y="34" width="863" height="998" key="dock-window-1" timestamp="1585934578508">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="13" y="34" width="863" height="998" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1585934578508" />
+    <state x="178" y="69" width="730" height="998" key="dock-window-2" timestamp="1585939871039">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="178" y="69" width="730" height="998" key="dock-window-2/0.34.1920.1046@0.34.1920.1046" timestamp="1585939871039" />
+    <state x="758" y="46" width="942" height="998" key="dock-window-3" timestamp="1585940936726">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="758" y="46" width="942" height="998" key="dock-window-3/0.34.1920.1046@0.34.1920.1046" timestamp="1585940936725" />
+    <state x="969" y="34" width="924" height="1018" key="dock-window-4" timestamp="1585942078093">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="969" y="34" width="924" height="1018" key="dock-window-4/0.34.1920.1046@0.34.1920.1046" timestamp="1585942078093" />
+    <state x="1144" y="40" width="663" height="998" key="dock-window-5" timestamp="1585943172943">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1144" y="40" width="663" height="998" key="dock-window-5/0.34.1920.1046@0.34.1920.1046" timestamp="1585943172943" />
+    <state x="147" y="200" width="670" height="676" key="search.everywhere.popup" timestamp="1585942243735">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="147" y="200" width="670" height="676" key="search.everywhere.popup/0.34.1920.1046@0.34.1920.1046" timestamp="1585942243735" />
+  </component>
+</project>

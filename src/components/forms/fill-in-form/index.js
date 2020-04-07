@@ -1,31 +1,45 @@
 import 'date-fns';
-import React from 'react';
-import { Grid, MenuItem, TextField, InputAdornment }from '@material-ui/core';
+import React, {useState} from 'react';
+import {
+            Grid,
+            MenuItem,
+            TextField,
+            InputAdornment,
+            BottomNavigationAction,
+            BottomNavigation
+        }from '@material-ui/core';
 import DialpadRoundedIcon from "@material-ui/icons/DialpadRounded";
 import DateFnsUtils from '@date-io/date-fns';
 import {
     MuiPickersUtilsProvider,
-    KeyboardTimePicker,
     KeyboardDatePicker,
 } from '@material-ui/pickers';
 import { useStylesFillIn as useStyles } from "../../../use-styles";
+import './fill-in-form.css'
+
 
 const FillInForm = ({
                         date,
                         amount,
                         comment,
-                        currency,
                         category,
                         handleCommentChange,
                         handleDateChange,
                         handleAmountChange,
-                        handleCurrencyChange,
                         handleCategoryChange,
+                        categoryIcon,
+                        categoryValue,
+                        categoryLabel,
 
-                        currencies,
                         categories}) => {
 
     const classes = useStyles();
+
+    const [value, setValue] = useState('recents');
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
 
     return (
         <Grid container
@@ -33,10 +47,27 @@ const FillInForm = ({
               justify="center"
               alignItems="center"
         >
-            <Grid item xs={1} sm={2} />
-            <Grid item xs={10} sm={8}>
-                <form className={classes.root} noValidate autoComplete="off">
-                    <div>
+            <Grid item xs={2} sm={3} />
+            <Grid item xs={8} sm={6}>
+                <form style={{ alignItems: "center" }} className={classes.root} noValidate autoComplete="off">
+                    <div className="amount">
+                        <TextField
+                            className={classes.margin}
+                            id="input-with-icon-textfield"
+                            type="number"
+                            value={amount}
+                            onChange={handleAmountChange}
+                            label="Enter Amount"
+                            InputProps={{
+                                startAdornment: (
+                                    <InputAdornment position="start">
+                                        <DialpadRoundedIcon />
+                                    </InputAdornment>
+                                ),
+                            }}
+                        />
+                    </div>
+                    <div className="date">
                         <MuiPickersUtilsProvider utils={DateFnsUtils}>
                                 <KeyboardDatePicker
                                     disableToolbar
@@ -51,17 +82,9 @@ const FillInForm = ({
                                         'aria-label': 'change date',
                                     }}
                                 />
-                                <KeyboardTimePicker
-                                    margin="normal"
-                                    id="time-picker"
-                                    label="Time picker"
-                                    value={date}
-                                    onChange={handleDateChange}
-                                    KeyboardButtonProps={{
-                                        'aria-label': 'change time',
-                                    }}
-                                />
                         </MuiPickersUtilsProvider>
+                    </div>
+                    <div className="category">
                         <TextField
                             id="standard-select-currency"
                             select
@@ -78,39 +101,8 @@ const FillInForm = ({
                                 ))
                             }
                         </TextField>
-
-                        <TextField
-                            className={classes.margin}
-                            id="input-with-icon-textfield"
-                            type="number"
-                            value={amount}
-                            onChange={handleAmountChange}
-                            label="Enter Amount"
-                            InputProps={{
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <DialpadRoundedIcon />
-                                    </InputAdornment>
-                                ),
-                            }}
-                        />
-
-                        <TextField
-                            id="standard-select-currency"
-                            select
-                            label="Currency"
-                            value={currency}
-                            onChange={handleCurrencyChange}
-                            helperText="Please select your currency"
-                        >
-                            {
-                                currencies.map(option => (
-                                    <MenuItem key={option.value} value={option.value}>
-                                        {option.label}
-                                    </MenuItem>
-                                ))
-                            }
-                        </TextField>
+                    </div>
+                    <div className="comment">
                         <TextField
                             id="standard-textarea"
                             label="Comment"
@@ -121,8 +113,23 @@ const FillInForm = ({
                         />
                     </div>
                 </form>
+                <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                </BottomNavigation>
+                <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                </BottomNavigation>
+                <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                    <BottomNavigationAction label="Recents" value="recents" icon={"icon"} />
+                </BottomNavigation>
             </Grid>
-            <Grid item xs={1} sm={2} />
+            <Grid item xs={2} sm={3} />
         </Grid>
 
     )

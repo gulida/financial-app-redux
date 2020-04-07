@@ -1,44 +1,32 @@
 import React from "react";
-import MoreHorizRoundedIcon from '@material-ui/icons/MoreHorizRounded';
+import { balanceIcon } from '../../services/icons'
+import { TableRow, Typography, TableCell } from "@material-ui/core";
+import withService from "../hoc";
+import GridContainerForm from "../forms/grid-container-form";
 
+const Balance = ({ dataService }) => {
 
-import TableForm from "../forms/table-form/table-form";
-import TableHeadForm from "../forms/table-form/table-head";
-import TableBodyForm from "../forms/table-form/table-body";
-import Grid from "@material-ui/core/Grid";
-
-
-const Balance = () => {
-
-    const headTitle = 'Balance'
-    const currency = 'Som'
-    const icon = <MoreHorizRoundedIcon/>
-    const title = 'Total'
-    const amount = 1000
-    const head = <TableHeadForm
-                    title={headTitle}
-                    currency={currency}
-                    icon={icon}
-                />
-    const body = <TableBodyForm title={title} amount={amount}/>
-
+    const amount = dataService.getIncomeTotalAmount() - dataService.getSpendingTotalAmount()
+    const icon = balanceIcon
 
     return (
-        <Grid container
-              spacing={1}
-              justify="center"
-              alignItems="center"
-              direction="column">
-            <Grid item container direction="row">
-                <Grid item xs={0} sm={2}/>
-                <Grid item xs={12} sm={8}>
-                    <TableForm tableHead={head} tableBody={body}/>
-                </Grid>
-                <Grid item xs={0} sm={2}/>
-            </Grid>
-        </Grid>
-
+            <GridContainerForm>
+                <TableRow>
+                    <TableCell>
+                        <Typography style={{ textAlign: "center" }} variant="h4" gutterBottom>
+                            { icon }        Balance
+                        </Typography>
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>
+                        <Typography style={{ textAlign: "center" }} variant="subtitle2" gutterBottom>
+                            {amount} сом
+                        </Typography>
+                    </TableCell>
+                </TableRow>
+            </GridContainerForm>
     )
 }
 
-export default Balance
+export default withService()(Balance)

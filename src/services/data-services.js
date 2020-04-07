@@ -1,6 +1,5 @@
 import FinancialData from "./financial-data";
 import TermData from "./term-data";
-import Currencies from "./currency-data";
 
 export default class DataService {
 
@@ -9,21 +8,13 @@ export default class DataService {
         return title
     }
 
-    getCurrency() {
-        const currency = Currencies.map(value => ({
-            value: value.value,
-            label: value.label
-        }))
-        return currency
-    }
-
     getIncomeCategory() {
         const incomeCategory = FinancialData[0].income.map(value => {
             const category = value.category;
             const amount = category.map(value1 => (value1.amount))
                     .reduce((acc, price) => acc + price)
 
-            return { id: (value.id - 1), amount, value: value.name, }
+            return { id: (value.id), amount, value: value.name, }
         })
         return incomeCategory
     }
@@ -33,7 +24,7 @@ export default class DataService {
             const category = value.category;
             const amount = category.map(value1 => value1.amount)
                 .reduce((acc, price) => acc + price )
-            return { id: (value.id - 1), amount, value: value.name}
+            return { id: (value.id), amount, value: value.name}
         })
         return spendingCategory
     }

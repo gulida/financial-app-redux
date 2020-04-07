@@ -1,22 +1,20 @@
 import React from "react";
 import  MenuIcon  from '@material-ui/icons/Menu';
 import Header from "../forms/header";
-import Income from "../main/income";
 import Balance from "../main/balance";
-import Spending from "../main/spending";
-import Category from "../main/category";
+import IncomeSpending from "../main/income_spending";
+import Footer from "../forms/footer";
 
 const HomePage = () => {
     const center = 'Financial Accounting'
-    const right = "LOGIN"
+    const right = "LOGOUT"
     const left = <MenuIcon/>
     return (
         <div>
             <Header center={center} right={right} left={left}/>
-            <Income/>
-            <Spending/>
             <Balance/>
-            <Category/>
+            <IncomeSpending/>
+            <Footer/>
         </div>
     )
 }

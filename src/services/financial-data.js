@@ -3,7 +3,7 @@ const FinancialData = [
         id: 1,
         income: [
                 {
-                    id: 1,
+                    id: 0,
                     name: 'Salary',
                     category: [
                         {
@@ -50,7 +50,7 @@ const FinancialData = [
                     ],
                 },
                 {
-                    id: 2,
+                    id: 1,
                     name: 'Bonus',
                     category: [
                         {
@@ -97,8 +97,8 @@ const FinancialData = [
                     ],
                 },
                 {
-                    id:3,
-                    name: 'Lotto',
+                    id: 3,
+                    name: 'Gift',
                     category: [
                         {
                             id: 1,
@@ -124,7 +124,7 @@ const FinancialData = [
         id: 2,
         spending: [
             {
-                id: 1,
+                id: 0,
                 name: 'Food',
                 category: [
                     {
@@ -186,7 +186,7 @@ const FinancialData = [
                 ],
             },
             {
-                id: 2,
+                id: 1,
                 name: 'House',
                 category: [
                     {
@@ -248,7 +248,7 @@ const FinancialData = [
                 ],
             },
             {
-                id: 3,
+                id: 2,
                 name: 'Transport',
                 category: [
                     {

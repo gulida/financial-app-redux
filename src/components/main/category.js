@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import {Link} from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import TableHeadForm from "../forms/table-form/table-head";
+import GridContainerForm from "../forms/grid-container-form";
 
 const Category = () => {
     const income =  <Link to="/total-income">
@@ -22,19 +23,9 @@ const Category = () => {
                         <Typography>Spending</Typography>
                     </Link>
     return (
-        <Grid container
-              spacing={1}
-              justify="center"
-              alignItems="center"
-              direction="column">
-            <Grid item container direction="row">
-                <Grid item xs={0} sm={2}/>
-                <Grid item xs={12} sm={8}>
-                    <TableHeadForm title={income} currency icon={spending}/>
-                </Grid>
-                <Grid item xs={0} sm={2}/>
-            </Grid>
-        </Grid>
+        <GridContainerForm>
+            <TableHeadForm title={income} currency icon={spending}/>
+        </GridContainerForm>
     )
 }
 

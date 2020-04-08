@@ -1,4 +1,4 @@
-import {Grid, Paper, Table, TableBody, TableContainer} from "@material-ui/core";
+import {Grid, } from "@material-ui/core";
 import React from "react";
 
 const GridContainerForm = (props) => {
@@ -11,13 +11,7 @@ const GridContainerForm = (props) => {
             <Grid item container direction="row">
                 <Grid item xs="auto" sm={2}/>
                 <Grid item xs={12} sm={8}>
-                    <TableContainer component={Paper}>
-                        <Table aria-label="simple table" size="small">
-                            <TableBody>
-                                {props.children}
-                            </TableBody>
-                        </Table>
-                    </TableContainer>
+                    {props.children}
                 </Grid>
                 <Grid item xs="auto" sm={2}/>
             </Grid>

@@ -3,6 +3,7 @@ import TermData from "./term-data";
 
 export default class DataService {
 
+
     getTerm() {
         const title = TermData.map(value => value.title)
         return title

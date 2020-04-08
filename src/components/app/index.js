@@ -8,6 +8,7 @@ import CategoryIncomePage from "../pages/category-income-page";
 import MaterialTableDemo from "../example";
 import TotalSpendingPage from "../pages/total-spending-page";
 import CategorySpendingPage from "../pages/category-spending-page";
+import RegistrationForm from "../forms/registration-form";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
 
 
                 <Route path="/example" component={MaterialTableDemo} />
+                <Route path="/registration" component={RegistrationForm} />
             </Switch>
         </div>
     )

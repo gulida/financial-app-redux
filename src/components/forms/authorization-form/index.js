@@ -5,7 +5,7 @@ import { Avatar, Button, CssBaseline, TextField,
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { useStylesRegistration as useStyles } from "../../../use-styles"
 
-const AuthorizationForm = () => {
+const AuthorizationForm = ({ isLoggedIn, onLogin }) => {
     const classes = useStyles();
 
     return (
@@ -49,6 +49,7 @@ const AuthorizationForm = () => {
                         variant="contained"
                         color="primary"
                         className={classes.submit}
+                        onClick={onLogin}
                     >
                         Sign In
                     </Button>

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/registration-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/fill-in-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/authorization-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/use-styles/use-styles-fill-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-styles/use-styles-fill-in.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/use-styles/use-styles-registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-styles/use-styles-registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/authorization-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/authorization-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home-page.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,7 @@
       <workItem from="1585946068170" duration="1322000" />
       <workItem from="1586238452140" duration="20101000" />
       <workItem from="1586259852690" duration="12090000" />
-      <workItem from="1586332332222" duration="8241000" />
+      <workItem from="1586332332222" duration="11493000" />
     </task>
     <servers />
   </component>

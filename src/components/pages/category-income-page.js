@@ -8,14 +8,12 @@ import Grid from "@material-ui/core/Grid";
 const CategoryIncomePage = ({ id, dataService }) => {
 
     const left = <ArrowBackIosIcon/>
-    const linkToPage = "/total-income"
+    const linkToPage = "/"
     const data = dataService.getIncomeCategoryId(id)
     const income = data.category
     const center = data.name
     const total = dataService.getIncomeCategoryIdAmount(id)
 
-    console.log('INCOME: ', income)
-    console.log("TOTAL: ", total)
 
     return (
         <div>

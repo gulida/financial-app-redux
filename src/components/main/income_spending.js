@@ -1,6 +1,6 @@
 import React from "react";
 import {Grid, Paper, Table, TableBody, TableContainer } from "@material-ui/core";
-import { spendingIconsArr, incomeIconsArr} from "../../services/icons";
+import { spendingIconsArr, incomeIconsArr, incomeIconColors, spendingIconColors} from "../../services/icons";
 import withService from "../hoc";
 import TableRowForm from "../forms/table-form/table-row";
 
@@ -23,15 +23,23 @@ const IncomeSpending = ({ dataService }) => {
                             <TableBody>
                                 {
                                     incomeCategory.map(value => (
-                                        <TableRowForm amount={value.amount} value={value.value} icon={incomeIconsArr.find((item, index) =>
-                                            (index === value.id ? item : ""))} linkToPage={`/total-income/${value.id}`} key={value.id} currency="сом" />
+                                        <TableRowForm amount={value.amount} value={value.value}
+                                                      icon={incomeIconsArr.find((item, index) =>
+                                                                                (index === value.id ? item : ""))}
+                                                      color={incomeIconColors.find((item, index) => (
+                                                                                    index === value.id ? item : " "))}
+                                                      linkToPage={`/total-income/${value.id}`} key={value.id} currency="сом" />
                                        ))
                                 }
 
                                 {
                                     spendingCategory.map(value => (
-                                        <TableRowForm linkToPage={`/total-spending/${value.id}`} icon={spendingIconsArr.find((item, index) =>
-                                            (index === value.id ? item : ""))} value={value.value} amount={ - value.amount} key={value.id} currency={"сом"} />
+                                        <TableRowForm linkToPage={`/total-spending/${value.id}`}
+                                                      icon={spendingIconsArr.find((item, index) =>
+                                                                                (index === value.id ? item : ""))}
+                                                      color={spendingIconColors.find((item, index) => (
+                                                          index === value.id ? item : " "))}
+                                                      value={value.value} amount={ - value.amount} key={value.id} currency={"сом"} />
                                     ))
                                 }
                             </TableBody>

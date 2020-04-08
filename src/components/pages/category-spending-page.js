@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 const CategorySpendingPage = ({ id, dataService }) => {
 
     const left = <ArrowBackIosIcon/>
-    const linkToPage = "/total-spending"
+    const linkToPage = "/"
     const data = dataService.getSpendingCategoryId(id)
     const spending = data.category
     const center = data.name

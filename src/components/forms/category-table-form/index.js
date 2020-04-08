@@ -5,10 +5,8 @@ const CategoryTableForm = ({ data}) => {
     const  [state, setState] = useState( {data} )
     const columns = [
         { title: 'Date', field: 'date' },
-        { title: 'Time', field: 'time' },
         { title: 'Comment', field: 'comment' },
         { title: 'Amount', field: 'amount', type: 'numeric' },
-        { title: 'Currency', field: 'currency' },
     ]
 
 

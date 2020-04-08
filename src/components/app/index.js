@@ -1,12 +1,10 @@
 import React, {Component} from "react";
-import {  Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import HomePage from "../pages/home-page";
 import NewIncomePage from "../pages/new-income-page";
 import NewSpendingPage from "../pages/new-spending-page";
-import TotalIncomePage from "../pages/total-income-page";
 import CategoryIncomePage from "../pages/category-income-page";
 import MaterialTableDemo from "../example";
-import TotalSpendingPage from "../pages/total-spending-page";
 import CategorySpendingPage from "../pages/category-spending-page";
 import Registration from "../pages/registration-page";
 import Authorization from "../pages/authorization-page";
@@ -29,39 +27,41 @@ export default class App extends Component {
         const { isLoggedIn } = this.state
         console.log(isLoggedIn)
         return (
-            <div>
-                <Switch>
-                    <Route path="/" exact
-                    render={() => (
-                        <HomePage isLoggedIn={isLoggedIn} />
-                    )}
-                    />
-                    <Route path="/new-income" component={NewIncomePage} />
-                    <Route path="/new-spending" component={NewSpendingPage}/>
-                    <Route path="/total-income" component={TotalIncomePage} exact />
-                    <Route path="/total-spending" component={TotalSpendingPage} exact />
-                    <Route path="/total-income/:id"
-                           render={({ match }) => {
-                               const { id } = match.params;
-                               return <CategoryIncomePage id={id} />
-                           }}
-                    />
+            <Router>
+                <div>
+                    <Switch>
+                        <Route path="/" exact
+                        render={() => (
+                            <HomePage isLoggedIn={isLoggedIn} />
+                        )}
+                        />
+                        <Route path="/new-income" component={NewIncomePage} />
+                        <Route path="/new-spending" component={NewSpendingPage}/>
+                        <Route path="/total-income/:id"
+                               render={({ match }) => {
+                                   const { id } = match.params;
+                                   return <CategoryIncomePage id={id} />
+                               }}
+                        />
 
-                    <Route path="/total-spending/:id"
-                           render={({ match }) => {
-                               const { id } = match.params;
-                               return <CategorySpendingPage id={id} />
-                           }} />
+                        <Route path="/total-spending/:id"
+                               render={({ match }) => {
+                                   const { id } = match.params;
+                                   return <CategorySpendingPage id={id} />
+                               }} />
 
 
-                    <Route path="/example" component={MaterialTableDemo} />
-                    <Route path="/registration" component={Registration} />
-                    <Route path="/auth"
-                    render={() => (
-                        <Authorization isLoggedIn={isLoggedIn} onLogin={this.onLogin} />
-                    )}/>
-                </Switch>
-            </div>
+                        <Route path="/example" component={MaterialTableDemo} />
+                        <Route path="/registration" component={Registration} />
+                        <Route path="/auth"
+                        render={() => (
+                            <Authorization isLoggedIn={isLoggedIn} onLogin={this.onLogin} />
+                        )}/>
+
+                        <Route render={() => <h2>Page not found!!!</h2>} />
+                    </Switch>
+                </div>
+            </Router>
         )
     }
 }

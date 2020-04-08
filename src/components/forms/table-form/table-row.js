@@ -3,16 +3,16 @@ import {Link} from "react-router-dom";
 import React from "react";
 
 
-const TableRowForm = ({ linkToPage, icon, value, amount, currency }) => {
+const TableRowForm = ({ linkToPage, icon, value, amount, currency, color }) => {
     return (
         <TableRow>
             <TableCell>
-                <Typography style={{ textAlign: "left"}} variant="button">
+                <Typography style={{ textAlign: "left", }} variant="button">
                     <Link style={{textDecoration: 'none'}} to={linkToPage}>
                                                         <span style={{ marginTop: 20, marginRight: 20}}>
                                                             {icon}
                                                         </span>
-                        <span style={{ marginBottom: 20 }}>
+                        <span style={{ marginBottom: 20, color: `${color}` }}>
                                                             {value}
                                                         </span>
                     </Link>

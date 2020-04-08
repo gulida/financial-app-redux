@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "@material-ui/core";
 import { Redirect } from "react-router-dom"
 import  MenuIcon  from '@material-ui/icons/Menu';
 import Header from "../forms/header";
@@ -6,7 +7,7 @@ import Balance from "../main/balance";
 import IncomeSpending from "../main/income_spending";
 import Footer from "../forms/footer";
 import { useStylesHomepage as useStyles } from "../../use-styles"
-import { Container } from "@material-ui/core";
+
 
 const HomePage = ({ isLoggedIn }) => {
     const classes = useStyles();

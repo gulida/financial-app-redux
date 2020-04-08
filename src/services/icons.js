@@ -10,18 +10,20 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import CakeIcon from '@material-ui/icons/Cake';
 import CallEndOutlinedIcon from '@material-ui/icons/CallEndOutlined';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
-    const transportIcon = <DirectionsBusIcon />
-    const houseIcon = <HomeIcon/>
-    const foodIcon = <RestaurantIcon/>
-    const educationIcon = <SchoolIcon/>
-    const internetIcon = <WifiIcon/>
-    const salaryIcon = <WorkIcon />
-    const balanceIcon = <MonetizationOnIcon/>
-    const bonusIcon = <MailOutlineIcon/>
-    const giftIcon = <CardGiftcardIcon/>
-    const birthDayIcon = <CakeIcon/>
-    const phoneIcon = <CallEndOutlinedIcon />
+    const transportIcon = <DirectionsBusIcon style={{color: "darkorange"}} />
+    const houseIcon = <HomeIcon style={{ color: "darkolivegreen"}}/>
+    const foodIcon = <RestaurantIcon style={{ color: "lightsalmon"}}/>
+    const educationIcon = <SchoolIcon style={{ color: "mediumorchid"}}/>
+    const internetIcon = <WifiIcon style={{ color: "green"}}/>
+    const salaryIcon = <WorkIcon style={{ color: "aqua" }} />
+    const balanceIcon = <MonetizationOnIcon style={{ color: "aquamarine"}}/>
+    const bonusIcon = <MailOutlineIcon style={{ color: "brown"}}/>
+    const giftIcon = <CardGiftcardIcon style={{ color: "chartreuse"}}/>
+    const birthDayIcon = <CakeIcon style={{ color: "lightgreen"}}/>
+    const phoneIcon = <CallEndOutlinedIcon style={{ color: "lightpink"}} />
+    const addIcon = <AddCircleOutlineIcon style={{ color: "dodgerblue" }} />
 
     const spendingIconsArr = [
                                 foodIcon,
@@ -31,19 +33,31 @@ import CallEndOutlinedIcon from '@material-ui/icons/CallEndOutlined';
                                 educationIcon,
                                 giftIcon,
                                 birthDayIcon,
-                                phoneIcon
+                                phoneIcon,
+                                addIcon
                             ];
+    const spendingIconColors = [
+        "lightsalmon", "darkolivegreen", "darkorange",
+        "green", "mediumorchid", "chartreuse", "lightgreen", "lightpink", "dodgerblue"
+    ]
 
     const incomeIconsArr = [
                                 salaryIcon,
                                 bonusIcon,
                                 birthDayIcon,
-                                giftIcon
+                                giftIcon,
+                                addIcon
                             ]
+const incomeIconColors = [
+    "aqua", "brown", "lightgreen", "chartreuse", "dodgerblue"
+]
 
 export {
         balanceIcon,
         spendingIconsArr,
-        incomeIconsArr
+        incomeIconsArr,
+        spendingIconColors,
+        incomeIconColors
+
 }
 

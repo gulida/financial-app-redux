@@ -10,13 +10,18 @@ const IncomeCategories = [
 
             },
             {
-                id:3,
+                id:2,
                 name: 'Birth Day',
 
             },
             {
-                id: 4,
+                id: 3,
                 name: 'Gift',
+
+            },
+            {
+                id: 4,
+                name: 'Add',
 
             },
         ]
@@ -53,6 +58,10 @@ const SpendingCategories = [
     {
         id: 7,
         name: 'Phone',
+    },
+    {
+        id: 8,
+        name: 'Add',
     },
 ]
 

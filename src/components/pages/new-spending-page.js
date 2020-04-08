@@ -3,15 +3,13 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import useCategory from "../../hooks/use-category";
 import useAmount from "../../hooks/use-amount";
 import useSelectDate from "../../hooks/use-select-date";
-import FillInForm from "../forms/fill-in-form";
+import { FillInButton, FillInFormContainer, FillInFormGrid } from "../forms/fill-in-form";
 import useComment from "../../hooks/use-comment";
-import withService from "../hoc";
 import Header from "../forms/header";
 import SpendingCategoryIcons from "../category-icons/spending-category-icons";
 import GridContainerForm from "../forms/grid-container-form";
 
-const NewSpendingPage = ({ dataService }) => {
-    const categories = dataService.getSpendingCategory()
+const NewSpendingPage = () => {
 
     const { category, chooseCategory } = useCategory()
     const { date, chooseDate } = useSelectDate()
@@ -25,16 +23,20 @@ const NewSpendingPage = ({ dataService }) => {
         <div>
             <Header left={left} center={center}  linkToPage={linkToPage} />
             <GridContainerForm>
-                <FillInForm amount={amount} date={date}
-                            comment={comment} category={category}
-                            handleCommentChange={changeComment} handleAmountChange={enterAmount}
-                            handleDateChange={chooseDate} handleCategoryChange={chooseCategory}
-                            categories={categories}
-                />
-                <SpendingCategoryIcons handleSelectCategory={chooseCategory}/>
+                <FillInFormContainer>
+                    <FillInFormGrid category={category} amount={amount}
+                                    handleCategoryChange={chooseCategory}
+                                    handleDateChange={chooseDate}
+                                    handleAmountChange={enterAmount}
+                                    handleCommentChange={changeComment}
+                                    comment={comment} date={date}
+                    />
+                    <SpendingCategoryIcons handleSelectCategory={chooseCategory}/>
+                    <FillInButton/>
+                </FillInFormContainer>
             </GridContainerForm>
         </div>
     )
 }
 
-export default withService()(NewSpendingPage)
+export default NewSpendingPage

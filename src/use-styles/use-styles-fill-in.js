@@ -20,10 +20,11 @@ const useStylesFillIn = makeStyles(theme => ({
         borderRadius: "5px",
         borderStyle: "ridge",
         flexGrow: 1,
+        alignItems: 'center',
     },
 
     paper: {
-        marginTop: theme.spacing(8),
+        marginTop: theme.spacing(2),
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/category-icons/income-category-icons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/category-icons/spending-category-icons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/use-styles/use-style-homepage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/use-styles/use-styles-registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/registration-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/fill-in-form/fill-in-form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/forms/fill-in-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/grid-container-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/grid-container-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/new-spending-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/new-spending-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/data-services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data-services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/use-styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-styles/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/authorization-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/use-styles/use-styles-fill-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-styles/use-styles-fill-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/use-styles/use-styles-registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-styles/use-styles-registration.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +96,7 @@
       <workItem from="1585946068170" duration="1322000" />
       <workItem from="1586238452140" duration="20101000" />
       <workItem from="1586259852690" duration="12090000" />
-      <workItem from="1586332332222" duration="3870000" />
+      <workItem from="1586332332222" duration="8241000" />
     </task>
     <servers />
   </component>
@@ -137,10 +128,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="959" height="272" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1586332744221" />
-    <state x="1038" y="67" width="728" height="998" key="dock-window-1" timestamp="1586336250947">
+    <state x="1038" y="67" width="728" height="998" key="dock-window-1" timestamp="1586336365368">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1038" y="67" width="728" height="998" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586336250947" />
+    <state x="1038" y="67" width="728" height="998" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586336365368" />
     <state x="1040" y="34" width="728" height="698" key="dock-window-2" timestamp="1586271666068">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

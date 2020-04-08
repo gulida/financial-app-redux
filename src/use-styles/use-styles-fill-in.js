@@ -35,9 +35,8 @@ const useStylesFillIn = makeStyles(theme => ({
     },
 
     textField: {
-        marginLeft: theme.spacing(1),
-        marginRight: theme.spacing(1),
-        width: 380,
+        marginLeft: theme.spacing(0),
+        marginRight: theme.spacing(0),
     },
 
     submit: {

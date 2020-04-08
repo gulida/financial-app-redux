@@ -39,6 +39,7 @@ const FillInForm = ({
                             <TextField
                                 id="input-with-icon-textfield"
                                 type="number"
+                                fullWidth
                                 className={classes.textField}
                                 value={amount}
                                 onChange={handleAmountChange}
@@ -53,22 +54,27 @@ const FillInForm = ({
                             />
                         </Grid>
                         <Grid item xs={12}>
-                            <TextField
-                                id="date"
-                                label="Date"
-                                type="date"
-                                className={classes.textField}
-                                value={date}
-                                onChange={handleDateChange}
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            />
+                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                                <KeyboardDatePicker
+                                    disableToolbar
+                                    variant="inline"
+                                    format="MM/dd/yyyy"
+                                    margin="normal"
+                                    id="date-picker-inline"
+                                    label="Date picker inline"
+                                    value={date}
+                                    onChange={handleDateChange}
+                                    KeyboardButtonProps={{
+                                        'aria-label': 'change date',
+                                    }}
+                                />
+                            </MuiPickersUtilsProvider>
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 id="standard-select-currency"
                                 label="Category"
+                                fullWidth
                                 className={classes.textField}
                                 value={category}
                                 onChange={handleCategoryChange}
@@ -79,6 +85,7 @@ const FillInForm = ({
                             <TextField
                                 id="standard-textarea"
                                 label="Comment"
+                                fullWidth
                                 className={classes.textField}
                                 value={comment}
                                 onChange={handleCommentChange}

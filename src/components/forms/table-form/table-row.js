@@ -14,6 +14,7 @@ const TableRowForm = ({ linkToPage, icon, value, amount, currency, color }) => {
                                                         </span>
                         <span style={{ marginBottom: 20, color: `${color}` }}>
                                                             {value}
+
                                                         </span>
                     </Link>
                 </Typography>

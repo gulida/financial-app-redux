@@ -27,14 +27,12 @@ class IncomeSpending extends Component {
     render() {
         const { incomeCategory, spendingCategory } = this.props
 
-        console.log("INCOME___CATERGORY", incomeCategory)
-
         return (
             <GridContainerForm>
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table" size="small">
                         <TableBody>
-                            {/*{
+                            {
                                 incomeCategory.map(value => (
                                     <TableRowForm amount={value.amount} value={value.value}
                                                   icon={incomeIconsArr.find((item, index) =>
@@ -43,7 +41,7 @@ class IncomeSpending extends Component {
                                                       index === value.id ? item : " "))}
                                                   linkToPage={`/total-income/${value.id}`} key={value.id} currency="сом" />
                                 ))
-                            }*/}
+                            }
 
                             {
                                 spendingCategory.map(value => (
@@ -77,5 +75,6 @@ const mapDispatchToProps = ( dispatch ) => {
         incomeCategoryDataLoaded
     }, dispatch)
 }
-export default withService()(
-    connect(mapStateToProps, mapDispatchToProps)(IncomeSpending))
+export default withService()
+(connect(mapStateToProps, mapDispatchToProps)
+(IncomeSpending))

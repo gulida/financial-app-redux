@@ -11,7 +11,7 @@ const IncomeCategories = [
             },
             {
                 id:2,
-                name: 'Birth Day',
+                name: 'Birthday',
 
             },
             {
@@ -53,7 +53,7 @@ const SpendingCategories = [
     },
     {
         id: 6,
-        name: 'Birth Day',
+        name: 'Birthday',
     },
     {
         id: 7,

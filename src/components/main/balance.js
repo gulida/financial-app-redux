@@ -20,8 +20,6 @@ class Balance extends Component {
         const { balance } = this.props
         const icon = balanceIcon
 
-        console.log("++++++++++++++", balance)
-
         return (
             <GridContainerForm>
                 <TableContainer component={Paper}>

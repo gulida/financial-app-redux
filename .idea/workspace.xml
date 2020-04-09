@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-icons/income-category-icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-icons/income-category-icons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-icons/spending-category-icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-icons/spending-category-icons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/example/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/example/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/table-form/table-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/table-form/table-row.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/income.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/income.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/income_spending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/income_spending.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/category-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/category-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/compose.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/compose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <workItem from="1586368234889" duration="1223000" />
       <workItem from="1586425548851" duration="14000" />
       <workItem from="1586430628805" duration="8587000" />
-      <workItem from="1586447714741" duration="1286000" />
+      <workItem from="1586447714741" duration="7500000" />
     </task>
     <servers />
   </component>
@@ -132,14 +134,14 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="949" height="185" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1586447864021" />
-    <state x="1049" y="34" width="842" height="1187" key="dock-window-1" timestamp="1586448757462">
+    <state x="1049" y="34" width="842" height="1187" key="dock-window-1" timestamp="1586450822265">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1049" y="34" width="842" height="1187" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586448757462" />
-    <state x="462" y="67" width="737" height="1011" key="dock-window-2" timestamp="1586445673887">
+    <state x="1049" y="34" width="842" height="1187" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586450822265" />
+    <state x="1117" y="75" width="757" height="987" key="dock-window-2" timestamp="1586454273061">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="462" y="67" width="737" height="1011" key="dock-window-2/0.34.1920.1046@0.34.1920.1046" timestamp="1586445673887" />
+    <state x="1117" y="75" width="757" height="987" key="dock-window-2/0.34.1920.1046@0.34.1920.1046" timestamp="1586454273061" />
     <state x="409" y="69" width="737" height="1011" key="dock-window-3" timestamp="1586447738582">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

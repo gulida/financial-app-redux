@@ -1,15 +1,28 @@
-import React from "react";
+import React, {Component} from "react";
 import { balanceIcon } from '../../services/icons'
 import {TableRow, Typography, TableCell, TableContainer, Paper, Table, TableBody } from "@material-ui/core";
 import withService from "../hoc";
 import GridContainerForm from "../forms/grid-container-form";
+import { connect } from "react-redux"
 
-const Balance = ({ dataService }) => {
+import {balanceLoaded} from "../../redux/actions";
 
-    const amount = dataService.getIncomeTotalAmount() - dataService.getSpendingTotalAmount()
-    const icon = balanceIcon
+class Balance extends Component {
 
-    return (
+    componentDidMount() {
+        const { dataService } = this.props
+        const data = dataService.getIncomeTotalAmount() - dataService.getSpendingTotalAmount()
+
+        this.props.balanceLoaded(data)
+    }
+
+    render() {
+        const { balance } = this.props
+        const icon = balanceIcon
+
+        console.log("++++++++++++++", balance)
+
+        return (
             <GridContainerForm>
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table" size="small">
@@ -24,7 +37,7 @@ const Balance = ({ dataService }) => {
                             <TableRow>
                                 <TableCell>
                                     <Typography style={{ textAlign: "center" }} variant="subtitle2" gutterBottom>
-                                        {amount} сом
+                                        {balance} сом
                                     </Typography>
                                 </TableCell>
                             </TableRow>
@@ -33,7 +46,20 @@ const Balance = ({ dataService }) => {
                 </TableContainer>
 
             </GridContainerForm>
-    )
+        )
+    }
 }
 
-export default withService()(Balance)
+const mapStateToProps = ( state) => {
+    return {
+        balance: state.balance
+    }
+}
+
+const mapDispatchToProps = {
+    balanceLoaded
+}
+
+
+export default withService()(
+    connect(mapStateToProps, mapDispatchToProps)(Balance))

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import './header.css'
 
 
-const Header = ({ left, center, right, linkToPage }) => {
+const Header = ({ left, center, right, linkToPage = "" }) => {
     const classes = useStyles();
 
     return (

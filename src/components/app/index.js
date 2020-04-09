@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 import HomePage from "../pages/home-page";
 import NewIncomePage from "../pages/new-income-page";
 import NewSpendingPage from "../pages/new-spending-page";
@@ -27,7 +27,6 @@ export default class App extends Component {
         const { isLoggedIn } = this.state
         console.log(isLoggedIn)
         return (
-            <Router>
                 <div>
                     <Switch>
                         <Route path="/" exact
@@ -61,7 +60,6 @@ export default class App extends Component {
                         <Route render={() => <h2>Page not found!!!</h2>} />
                     </Switch>
                 </div>
-            </Router>
         )
     }
 }

@@ -1,12 +1,42 @@
-import {INCOME_LOADED} from "../constants";
+import {
+    BALANCE_LOADED,
+    INCOME_CATEGORY_DATA_LOADED,
+    SPENDING_CATEGORY_DATA_LOADED,
+    TERM_LOADED
+} from "../constants";
 
-const incomeLoaded = (income) => {
+
+const balanceLoaded = ( balance ) => {
     return {
-        type: INCOME_LOADED,
-        payload: income
+        type: BALANCE_LOADED,
+        payload: balance
+    }
+}
+
+const termLoaded = ( term ) => {
+    return {
+        type: TERM_LOADED,
+        payload: term
+    }
+}
+
+const incomeCategoryDataLoaded = (incomeCategory) => {
+    return {
+        type: INCOME_CATEGORY_DATA_LOADED,
+        payload: incomeCategory
+    }
+}
+
+const spendingCategoryDataLoaded = (spendingCategory) => {
+    return {
+        type: SPENDING_CATEGORY_DATA_LOADED,
+        payload: spendingCategory
     }
 }
 
 export {
-    incomeLoaded,
+    balanceLoaded,
+    termLoaded,
+    incomeCategoryDataLoaded,
+    spendingCategoryDataLoaded
 }

@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/fill-in-form-button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/fill-in-form-container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/fill-in-form-grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/use-styles/use-styles-icons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-icons/income-category-icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-icons/income-category-icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-icons/spending-category-icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-icons/spending-category-icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/category-table-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/category-table-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/fill-in-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/table-form/table-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/table-form/table-row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/category.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/income.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/income.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/income.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/income_spending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/income_spending.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/spending.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/category-income-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/category-income-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/category-spending-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/category-spending-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/new-income-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/new-income-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/new-spending-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/new-spending-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/total-income-page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/total-spending-page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/category-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/category-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/use-styles/use-styles-fill-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/use-styles/use-styles-fill-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +97,10 @@
       <workItem from="1586238452140" duration="20101000" />
       <workItem from="1586259852690" duration="12090000" />
       <workItem from="1586332332222" duration="19718000" />
+      <workItem from="1586368234889" duration="1223000" />
+      <workItem from="1586425548851" duration="14000" />
+      <workItem from="1586430628805" duration="8587000" />
+      <workItem from="1586447714741" duration="1286000" />
     </task>
     <servers />
   </component>
@@ -124,42 +112,42 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="309" y="304" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1586357756178" />
-    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl" timestamp="1585947235806">
+    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl" timestamp="1586368630606">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1585947235806" />
-    <state width="1895" height="272" key="GridCell.Tab.0.bottom" timestamp="1586365267920">
+    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1586368630606" />
+    <state width="949" height="185" key="GridCell.Tab.0.bottom" timestamp="1586447864021">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="272" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1586365267920" />
-    <state width="1895" height="272" key="GridCell.Tab.0.center" timestamp="1586365267919">
+    <state width="949" height="185" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1586447864021" />
+    <state width="949" height="185" key="GridCell.Tab.0.center" timestamp="1586447864020">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="272" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1586365267919" />
-    <state width="1895" height="272" key="GridCell.Tab.0.left" timestamp="1586365267919">
+    <state width="949" height="185" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1586447864020" />
+    <state width="949" height="185" key="GridCell.Tab.0.left" timestamp="1586447864019">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="272" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1586365267919" />
-    <state width="1895" height="272" key="GridCell.Tab.0.right" timestamp="1586365267920">
+    <state width="949" height="185" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1586447864019" />
+    <state width="949" height="185" key="GridCell.Tab.0.right" timestamp="1586447864021">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="272" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1586365267920" />
-    <state x="1038" y="67" width="728" height="998" key="dock-window-1" timestamp="1586336365368">
+    <state width="949" height="185" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1586447864021" />
+    <state x="1049" y="34" width="842" height="1187" key="dock-window-1" timestamp="1586448757462">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1038" y="67" width="728" height="998" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586336365368" />
-    <state x="990" y="117" width="661" height="998" key="dock-window-2" timestamp="1586363032321">
+    <state x="1049" y="34" width="842" height="1187" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586448757462" />
+    <state x="462" y="67" width="737" height="1011" key="dock-window-2" timestamp="1586445673887">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="990" y="117" width="661" height="998" key="dock-window-2/0.34.1920.1046@0.34.1920.1046" timestamp="1586363032321" />
-    <state x="1099" y="69" width="661" height="1005" key="dock-window-3" timestamp="1586365027746">
+    <state x="462" y="67" width="737" height="1011" key="dock-window-2/0.34.1920.1046@0.34.1920.1046" timestamp="1586445673887" />
+    <state x="409" y="69" width="737" height="1011" key="dock-window-3" timestamp="1586447738582">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1099" y="69" width="661" height="1005" key="dock-window-3/0.34.1920.1046@0.34.1920.1046" timestamp="1586365027746" />
-    <state x="969" y="34" width="924" height="1018" key="dock-window-4" timestamp="1585942078093">
+    <state x="409" y="69" width="737" height="1011" key="dock-window-3/0.34.1920.1046@0.34.1920.1046" timestamp="1586447738582" />
+    <state x="1077" y="64" width="832" height="996" key="dock-window-4" timestamp="1586446552929">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="969" y="34" width="924" height="1018" key="dock-window-4/0.34.1920.1046@0.34.1920.1046" timestamp="1585942078093" />
+    <state x="1077" y="64" width="832" height="996" key="dock-window-4/0.34.1920.1046@0.34.1920.1046" timestamp="1586446552929" />
     <state x="1144" y="40" width="663" height="998" key="dock-window-5" timestamp="1585943172943">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

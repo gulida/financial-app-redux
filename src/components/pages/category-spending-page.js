@@ -3,7 +3,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import withService from "../hoc";
 import Header from "../forms/header";
 import CategoryTableForm from "../forms/category-table-form";
-import Grid from "@material-ui/core/Grid";
+import GridContainerForm from "../forms/grid-container-form";
 
 const CategorySpendingPage = ({ id, dataService }) => {
 
@@ -18,19 +18,9 @@ const CategorySpendingPage = ({ id, dataService }) => {
         <div>
             <Header linkToPage={linkToPage} center={center} left={left} right={total} />
 
-            <Grid container
-                  spacing={1}
-                  justify="center"
-                  alignItems="center"
-                  direction="column">
-                <Grid item container direction="row">
-                    <Grid item xs={0} sm={2}/>
-                    <Grid item xs={12} sm={8}>
-                        <CategoryTableForm data={spending}/>
-                    </Grid>
-                    <Grid item xs={0} sm={2}/>
-                </Grid>
-            </Grid>
+            <GridContainerForm>
+                <CategoryTableForm data={spending}/>
+            </GridContainerForm>
         </div>
     )
 }

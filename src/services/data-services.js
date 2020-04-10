@@ -3,14 +3,36 @@ import TermData from "./term-data";
 
 export default class DataService {
 
+    fData = FinancialData
+    tData = TermData
 
     getTerm() {
-        const title = TermData.map(value => value.title)
-        return title
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(this.tData.map(value => value.title))
+            }, 700)
+        })
     }
 
     getIncomeCategory() {
-        const incomeCategory = FinancialData[0].income.map(value => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if(Math.random() > 0.75) {
+                    reject(new Error("Something bad happened"));
+                } else {
+                    resolve(this.fData[0].income.map(value => {
+                        const category = value.category;
+                        const amount = category.map(value1 => (value1.amount))
+                            .reduce((acc, price) => acc + price)
+
+                        return {id: (value.id), amount, value: value.name,}
+                    }))
+                }
+
+            }, 700)
+        })
+    }
+/*        const incomeCategory = FinancialData[0].income.map(value => {
             const category = value.category;
             const amount = category.map(value1 => (value1.amount))
                     .reduce((acc, price) => acc + price)
@@ -18,20 +40,34 @@ export default class DataService {
             return { id: (value.id), amount, value: value.name, }
         })
         return incomeCategory
-    }
+    }*/
 
     getSpendingCategory() {
-        const spendingCategory = FinancialData[1].spending.map(value => {
-            const category = value.category;
-            const amount = category.map(value1 => value1.amount)
-                .reduce((acc, price) => acc + price )
-            return { id: (value.id), amount, value: value.name}
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(this.fData[1].spending.map(value => {
+                    const category = value.category;
+                    const amount = category.map(value1 => value1.amount)
+                        .reduce((acc, price) => acc + price)
+                    return { id: (value.id), amount, value: value.name}
+                }))
+            }, 700)
         })
-        return spendingCategory
     }
 
     getIncomeTotalAmount() {
-        const incomeCategory = FinancialData[0].income.map(value => {
+        const incomeCategory = this.fData[0].income.map(value => {
+            const category = value.category;
+            const amount = category.map(value1 => (value1.amount))
+                .reduce((acc, price) => acc + price)
+            return amount
+        })
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(incomeCategory.reduce((acc, price) => acc + price, 0))
+            }, 700)
+        })
+       /* const incomeCategory = FinancialData[0].income.map(value => {
             const category = value.category;
             const amount = category.map(value1 => (value1.amount))
                 .reduce((acc, price) => acc + price)
@@ -39,9 +75,26 @@ export default class DataService {
         })
 
         const totalAmount = incomeCategory.reduce((acc, price) => acc + price, 0)
-        return totalAmount
+        return totalAmount*/
     }
 
+    getSpendingTotalAmount() {
+        const spendingCategory = this.fData[1].spending.map(value => {
+            const category = value.category;
+            const amount = category.map(value1 => (value1.amount))
+                .reduce((acc, price) => acc + price)
+            return amount
+        })
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(spendingCategory.reduce((acc, price) => acc + price, 0))
+            }, 700)
+        })
+    }
+
+
+
+/*
     getSpendingTotalAmount() {
         const spendingCategory = FinancialData[1].spending.map(value => {
             const category = value.category;
@@ -53,6 +106,7 @@ export default class DataService {
         const totalAmount = spendingCategory.reduce((acc, price) => acc + price, 0)
         return totalAmount
     }
+*/
 
 
 

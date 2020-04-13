@@ -5,7 +5,7 @@ import { Container, CssBaseline,
     TextField } from "@material-ui/core";
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
-const RegistrationForm = () => {
+const RegistrationForm = ({ firstName, lastName, phoneNumber, password, submitted, handleSubmit, handleChange, registering }) => {
     const classes = useStyles();
 
     return (
@@ -15,66 +15,82 @@ const RegistrationForm = () => {
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <form className={classes.form} noValidate>
+                <form className={classes.form} noValidate onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
-                            <TextField
-                                autoComplete="fname"
-                                name="firstName"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="firstName"
-                                label="First Name"
-                                autoFocus
-                            />
+                            <div className={'form-group' + (submitted && !firstName ? ' has-error' : '')}>
+                                <TextField
+                                    autoComplete="fname"
+                                    name="firstName"
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    id="firstName"
+                                    label="First Name"
+                                    autoFocus
+                                    onChange={handleChange}
+                                    value={firstName}
+                                />
+                                {submitted && !firstName &&
+                                <div className="help-block">First Name is required</div>
+                                }
+                            </div>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <TextField
-                                autoComplete="lname"
-                                name="lastName"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="lastName"
-                                label="Last Name"
-                            />
+                            <div className={'form-group' + (submitted && !lastName ? ' has-error' : '')}>
+                                <TextField
+                                    autoComplete="lname"
+                                    name="lastName"
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    id="lastName"
+                                    label="Last Name"
+                                    onChange={handleChange}
+                                    value={lastName}
+                                />
+                                {submitted && !lastName &&
+                                <div className="help-block">Last Name is required</div>
+                                }
+                            </div>
                         </Grid>
                         <Grid item xs={12}>
-                            <TextField
-                                autoComplete=""
-                                name="phoneNumber"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="phoneNumber"
-                                label="Phone Number"
-                                type="number"
-                            />
+                            <div className={'form-group' + (submitted && !phoneNumber ? ' has-error' : '')}>
+                                <TextField
+                                    autoComplete=""
+                                    name="phoneNumber"
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    id="phoneNumber"
+                                    label="Phone Number"
+                                    type="number"
+                                    onChange={handleChange}
+                                    value={phoneNumber}
+                                />
+                                {submitted && !phoneNumber &&
+                                <div className="help-block">Phone number is required</div>
+                                }
+                            </div>
                         </Grid>
                         <Grid item xs={12}>
-                            <TextField
-                                autoComplete="email"
-                                name="email"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="email"
-                                label="Email Address"
-                                type="email"
-                            />
-                        </Grid>
-                        <Grid item xs={12}>
-                            <TextField
-                                autoComplete="current-password"
-                                name="password"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="password"
-                                label="Password"
-                                type="password"
-                            />
+                            <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
+                                <TextField
+                                    autoComplete="current-password"
+                                    name="password"
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    id="password"
+                                    label="Password"
+                                    type="password"
+                                    onChange={handleChange}
+                                    value={password}
+                                />
+                                {submitted && !password &&
+                                <div className="help-block">Password is required</div>
+                                }
+                            </div>
                         </Grid>
                     </Grid>
                     <Button
@@ -86,6 +102,7 @@ const RegistrationForm = () => {
                     >
                         Sign Up
                     </Button>
+                    {registering}
                     <Grid container justify="flex-end">
                         <Grid item>
                             <Link href="/auth" variant="body2">

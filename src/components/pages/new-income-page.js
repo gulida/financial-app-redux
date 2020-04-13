@@ -9,7 +9,7 @@ import {FillInButton, FillInFormContainer, FillInFormGrid} from "../forms/fill-i
 import GridContainerForm from "../forms/grid-container-form";
 import IncomeCategoryIcons from "../category-icons/income-category-icons";
 
-const NewIncomePage = () => {
+const NewIncomePage = ({ onAddToIncomeList }) => {
 
     const { category, chooseCategory } = useCategory()
     const { date, chooseDate } = useSelectDate()
@@ -30,7 +30,7 @@ const NewIncomePage = () => {
                                      handleDateChange={chooseDate} handleCategoryChange={chooseCategory}
                     />
                     <IncomeCategoryIcons handleSelectCategory={chooseCategory} />
-                    <FillInButton/>
+                    <FillInButton onAddedToList={onAddToIncomeList}/>
                 </FillInFormContainer>
             </GridContainerForm>
 

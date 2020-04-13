@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import {incomeCategoryDataLoaded, loadedError, spendingCategoryDataLoaded} from "../../redux/actions";
 import Spinner from "../spinner";
 import ErrorIndicator from "../error-indicator";
-import IncomeSpending from "./income-spending";
+import IncomeSpending from "../main/income-spending";
 
 
 class IncomeSpendingContainer extends Component {

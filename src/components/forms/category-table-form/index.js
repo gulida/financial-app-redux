@@ -1,51 +1,59 @@
-import React, {useState} from "react";
-import MaterialTable from "material-table";
+import React from "react";
+import {
+    Table, TableRow, TableCell,
+    Paper, TableContainer, TableHead,
+    TableBody, IconButton
+} from "@material-ui/core";
+import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
+import DeleteOutlineOutlinedIcon from '@material-ui/icons/DeleteOutlineOutlined';
 
-const CategoryTableForm = ({ data}) => {
-    const  [state, setState] = useState( {data} )
-    const columns = [
-        { title: 'Date', field: 'date' },
-        { title: 'Comment', field: 'comment' },
-        { title: 'Amount', field: 'amount', type: 'numeric' },
-    ]
 
+const CategoryTableForm = ({ items, onEdit, onDelete }) => {
 
     return (
-        <MaterialTable
-            data={ state.data }
-            columns={ columns }
-            options={{
-                actionsColumnIndex: -1,
-                showTitle: false,
-                search: false
-            }}
-            editable={{
-                onRowUpdate: (newData, oldData) =>
-                    new Promise((resolve) => {
-                        setTimeout(() => {
-                            resolve();
-                            if (oldData) {
-                                setState((prevState) => {
-                                    const data = [...prevState.data];
-                                    data[data.indexOf(oldData)] = newData;
-                                    return { ...prevState, data };
-                                });
-                            }
-                        }, 600);
-                    }),
-                onRowDelete: (oldData) =>
-                    new Promise((resolve) => {
-                        setTimeout(() => {
-                            resolve();
-                            setState((prevState) => {
-                                const data = [...prevState.data];
-                                data.splice(data.indexOf(oldData), 1);
-                                return { ...prevState, data };
-                            });
-                        }, 600);
-                    }),
-            }}
-        />
+            <TableContainer component={Paper}>
+
+                <Table aria-label="simple table" size="small">
+
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>#</TableCell>
+                            <TableCell>Date</TableCell>
+                            <TableCell>Comment</TableCell>
+                            <TableCell>Amount</TableCell>
+                            <TableCell>Action</TableCell>
+                        </TableRow>
+                    </TableHead>
+
+                    <TableBody>
+{
+                        items && items.map( value => (
+                        <TableRow>
+
+                            <TableCell>{value.id}</TableCell>
+                            <TableCell>{value.date}</TableCell>
+                            <TableCell>{value.comment}</TableCell>
+                            <TableCell>{value.amount}</TableCell>
+                            <TableCell>
+                                <IconButton onClick={ () => onEdit(value.id)} size="small">
+                                <EditOutlinedIcon
+                                    style={{ color: "orange" }} />
+                                </IconButton>
+                                <IconButton onClick={() => onDelete(value.id)} size="small">
+                                <DeleteOutlineOutlinedIcon
+
+                                    style={{ color: "darkred" }} />
+                                </IconButton>
+                            </TableCell>
+                        </TableRow>
+                        ))
+}
+                    </TableBody>
+
+                </Table>
+
+            </TableContainer>
+
     )
 }
 

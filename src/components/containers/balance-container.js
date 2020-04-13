@@ -4,7 +4,7 @@ import { connect } from "react-redux"
 import {incomeBalanceLoaded, loadedError, spendingBalanceLoaded} from "../../redux/actions";
 import Spinner from "../spinner";
 import ErrorIndicator from "../error-indicator";
-import Balance from "./balance";
+import Balance from "../main/balance";
 
 class BalanceContainer extends Component {
 

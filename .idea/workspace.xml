@@ -2,20 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="891fa535-82ff-40e1-ad6f-0f7c1dc95255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/main/balance-container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/income-spending.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_helpers/auth-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_helpers/fake-backend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_helpers/history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/private-route/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/alert-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/user-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/view-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/alert-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/reg-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/view-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/user-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/error-boundry/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-boundry/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/error-indicator/inde.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/error-indicator/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/balance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/income_spending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/income-spending-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/authorization-form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/category-table-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/category-table-form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/fill-in-form/fill-in-form-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/fill-in-form/fill-in-form-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/registration-form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/balance-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/balance-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/income-spending-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/income-spending-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/authorization-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/authorization-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/category-income-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/category-income-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/category-spending-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/category-spending-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/home-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/new-income-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/new-income-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/new-spending-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/new-spending-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/registration-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/registration-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/data-services.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data-services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/financial-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/financial-data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +78,14 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/containers" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/forms/footer" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/forms/footer" />
     </key>
   </component>
   <component name="RunManager">
@@ -106,7 +131,12 @@
       <workItem from="1586425548851" duration="14000" />
       <workItem from="1586430628805" duration="8587000" />
       <workItem from="1586447714741" duration="7500000" />
-      <workItem from="1586507172957" duration="9108000" />
+      <workItem from="1586507172957" duration="26380000" />
+      <workItem from="1586588879901" duration="6330000" />
+      <workItem from="1586599754126" duration="3503000" />
+      <workItem from="1586684738316" duration="11308000" />
+      <workItem from="1586765938685" duration="11309000" />
+      <workItem from="1586796221078" duration="532000" />
     </task>
     <servers />
   </component>
@@ -114,34 +144,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="309" y="304" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586357756178">
+    <state x="309" y="304" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586592577150">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="309" y="304" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1586357756178" />
-    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl" timestamp="1586368630606">
+    <state x="309" y="304" width="524" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1586592577150" />
+    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl" timestamp="1586685127735">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1586368630606" />
-    <state width="1895" height="267" key="GridCell.Tab.0.bottom" timestamp="1586509467339">
+    <state x="1207" y="315" width="424" height="490" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1586685127735" />
+    <state width="922" height="706" key="GridCell.Tab.0.bottom" timestamp="1586796305441">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="267" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1586509467339" />
-    <state width="1895" height="267" key="GridCell.Tab.0.center" timestamp="1586509467338">
+    <state width="922" height="706" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1586796305441" />
+    <state width="922" height="706" key="GridCell.Tab.0.center" timestamp="1586796305440">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="267" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1586509467338" />
-    <state width="1895" height="267" key="GridCell.Tab.0.left" timestamp="1586509467338">
+    <state width="922" height="706" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1586796305440" />
+    <state width="922" height="706" key="GridCell.Tab.0.left" timestamp="1586796305440">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="267" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1586509467338" />
-    <state width="1895" height="267" key="GridCell.Tab.0.right" timestamp="1586509467338">
+    <state width="922" height="706" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1586796305440" />
+    <state width="922" height="706" key="GridCell.Tab.0.right" timestamp="1586796305441">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1895" height="267" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1586509467338" />
-    <state x="752" y="89" width="805" height="987" key="dock-window-1" timestamp="1586509152150">
+    <state width="922" height="706" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1586796305441" />
+    <state x="1043" y="34" width="813" height="1002" key="dock-window-1" timestamp="1586599790350">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="752" y="89" width="805" height="987" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586509152150" />
+    <state x="1043" y="34" width="813" height="1002" key="dock-window-1/0.34.1920.1046@0.34.1920.1046" timestamp="1586599790350" />
     <state x="231" y="93" width="621" height="987" key="dock-window-2" timestamp="1586512433668">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
@@ -150,14 +180,18 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="312" y="149" width="621" height="987" key="dock-window-3/0.34.1920.1046@0.34.1920.1046" timestamp="1586511410915" />
-    <state x="1077" y="64" width="832" height="996" key="dock-window-4" timestamp="1586446552929">
+    <state x="220" y="102" width="754" height="987" key="dock-window-4" timestamp="1586532142722">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1077" y="64" width="832" height="996" key="dock-window-4/0.34.1920.1046@0.34.1920.1046" timestamp="1586446552929" />
-    <state x="1144" y="40" width="663" height="998" key="dock-window-5" timestamp="1585943172943">
+    <state x="220" y="102" width="754" height="987" key="dock-window-4/0.34.1920.1046@0.34.1920.1046" timestamp="1586532142722" />
+    <state x="1018" y="34" width="665" height="987" key="dock-window-5" timestamp="1586536476443">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="1144" y="40" width="663" height="998" key="dock-window-5/0.34.1920.1046@0.34.1920.1046" timestamp="1585943172943" />
+    <state x="1018" y="34" width="665" height="987" key="dock-window-5/0.34.1920.1046@0.34.1920.1046" timestamp="1586536476443" />
+    <state x="1075" y="34" width="845" height="987" key="dock-window-6" timestamp="1586538715229">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="1075" y="34" width="845" height="987" key="dock-window-6/0.34.1920.1046@0.34.1920.1046" timestamp="1586538715229" />
     <state x="147" y="200" width="670" height="676" key="search.everywhere.popup" timestamp="1585942243735">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>

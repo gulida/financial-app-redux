@@ -96,6 +96,69 @@ const FinancialData = [
 
                     ],
                 },
+            {
+                id: 2,
+                name: 'Birthday',
+                category: [
+                    {
+                        id: 1,
+                        comment: "Some comments",
+                        date: '04.02.2020',
+                        time: '18:20',
+                        amount: 1700,
+                        currency: 'Som'
+                    },
+                    {
+                        id: 2,
+                        comment: "Some comments",
+                        date: '05.03.2020',
+                        time: '18:25',
+                        amount: 5000,
+                        currency: 'Som'
+                    },
+                    {
+                        id: 3,
+                        comment: "Some comments",
+                        date: '06.04.2020',
+                        time: '17:20',
+                        amount: 4500,
+                        currency: 'Som'
+                    },
+                    {
+                        id: 4,
+                        comment: "Some comments",
+                        date: '07.05.2020',
+                        time: '15:20',
+                        amount: 500,
+                        currency: 'Som'
+                    },
+                    {
+                        id: 5,
+                        comment: "Some comments",
+                        date: '08.06.2020',
+                        time: '08:20',
+                        amount: 8000,
+                        currency: 'Som'
+                    },
+                    {
+                        id: 6,
+                        comment: "Some comments",
+                        date: '04.02.2020',
+                        time: '18:20',
+                        amount: 1700,
+                        currency: 'Som'
+                    },
+                    {
+                        id: 7,
+                        comment: "Some comments",
+                        date: '05.03.2020',
+                        time: '18:25',
+                        amount: 5000,
+                        currency: 'Som'
+                    },
+
+                ],
+            },
                 {
                     id: 3,
                     name: 'Gift',

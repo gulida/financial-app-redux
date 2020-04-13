@@ -9,7 +9,7 @@ import Header from "../forms/header";
 import SpendingCategoryIcons from "../category-icons/spending-category-icons";
 import GridContainerForm from "../forms/grid-container-form";
 
-const NewSpendingPage = () => {
+const NewSpendingPage = ({onAddedToList}) => {
 
     const { category, chooseCategory } = useCategory()
     const { date, chooseDate } = useSelectDate()
@@ -32,7 +32,8 @@ const NewSpendingPage = () => {
                                     comment={comment} date={date}
                     />
                     <SpendingCategoryIcons handleSelectCategory={chooseCategory}/>
-                    <FillInButton/>
+                    <FillInButton onAddedToList={() => onAddedToList({ category,
+                    amount, date, comment})}/>
                 </FillInFormContainer>
             </GridContainerForm>
         </div>

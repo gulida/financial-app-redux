@@ -5,7 +5,7 @@ import { Avatar, Button, CssBaseline, TextField,
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import { useStylesRegistration as useStyles } from "../../../use-styles"
 
-const AuthorizationForm = ({ isLoggedIn, onLogin }) => {
+const AuthorizationForm = ({ loggingIn, phone, password, submitted, handleSubmit, handleChange }) => {
     const classes = useStyles();
 
     return (
@@ -15,30 +15,45 @@ const AuthorizationForm = ({ isLoggedIn, onLogin }) => {
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <form className={classes.form} noValidate>
-                    <TextField
-                        variant="outlined"
-                        margin="normal"
-                        required
-                        fullWidth
-                        id="phoneNumber"
-                        label="Phone Number"
-                        name="phoneNumber"
-                        type="number"
-                        autoComplete="phone"
-                        autoFocus
-                    />
-                    <TextField
-                        variant="outlined"
-                        margin="normal"
-                        required
-                        fullWidth
-                        id="password"
-                        label="Password"
-                        name="password"
-                        type="password"
-                        autoComplete="current-password"
-                    />
+                <form className={classes.form} noValidate onSubmit={handleSubmit}>
+                    <div className={'form-group' + (submitted && !phone ? ' has-error' : '')}>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="phoneNumber"
+                            label="Phone Number"
+                            name="phoneNumber"
+                            type="number"
+                            autoComplete="phone"
+                            autoFocus
+                            onChange={handleChange}
+                            value={phone}
+                        />
+                        {submitted && !phone &&
+                        <div className="help-block">Phone is required</div>
+                        }
+                    </div>
+                    <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="password"
+                            label="Password"
+                            name="password"
+                            type="password"
+                            autoComplete="current-password"
+                            onChange={handleChange}
+                            value={password}
+                        />
+                        {submitted && !password &&
+                        <div className="help-block">Password is required</div>
+                        }
+                    </div>
+
                     <FormControlLabel
                         control={<Checkbox value="remember" color="primary" />}
                         label="Remember me"
@@ -49,10 +64,10 @@ const AuthorizationForm = ({ isLoggedIn, onLogin }) => {
                         variant="contained"
                         color="primary"
                         className={classes.submit}
-                        onClick={onLogin}
                     >
                         Sign In
                     </Button>
+                    { loggingIn }
                     <Grid container>
                         <Grid item xs>
                             <Link href="#" variant="body2">
